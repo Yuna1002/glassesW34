@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@1,900&display=swap");
+@import "./reset";
+@import "./mixin";
+@import "./base"; //body{font-size: 16px; container有用到＠mixin}
+@import "./variable"; //$spacer: 0.5rem;
+@import "./utilities";
+@import "./index";

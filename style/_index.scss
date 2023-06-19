@@ -1,0 +1,59 @@
+.logo {
+  width: 80px;
+}
+.nav {
+  &-link {
+    padding: 0 16px;
+    padding-bottom: 12px;
+    &:hover {
+      border-bottom: 3px solid yellow;
+    }
+  }
+}
+.banner {
+  background-image: url("../images/home-header.png");
+  background-size: cover;
+  background-position: center center;
+  height: calc(100vh - 81px);
+  @include mobile {
+    background-image: url("../images/home-header-sm.png");
+  }
+  &-btn {
+    border: 0;
+    background: $primary;
+    color: $white;
+    cursor: pointer;
+  }
+  &-content {
+    position: relative;
+    top: calc(50% - 81px);
+  }
+}
+.card {
+  &-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+  }
+  &-item {
+    width: 25%;
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+
+    @include pad {
+      width: 50%;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &-body {
+    border: 1px solid grey;
+    box-shadow: 0 2px 6px #00000029;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+}
